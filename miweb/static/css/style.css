@@ -1,0 +1,130 @@
+:root {
+    --primary-color: #3498db; /* Azul brillante */
+    --secondary-color: #2ecc71; /* Verde */
+    --text-color: #2c3e50; /* Gris oscuro */
+    --background-color: rgba(236, 240, 241, 0.9); /* Gris claro con opacidad */
+}
+
+body {
+    font-family: "Arial", sans-serif; /* Cambiado a Arial */
+    background: url("/static/flanes/nueva-foto.jpg") repeat fixed; /* Cambia la ruta de la imagen */
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    background-color: var(--background-color);
+    border-radius: 10px; /* Bordes más suaves */
+    padding: 15px; /* Menos padding */
+    margin-top: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra más sutil */
+}
+
+.navbar {
+    background-color: var(--primary-color) !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra más fuerte */
+}
+
+.nav-link {
+    font-weight: 500; /* Peso de fuente más ligero */
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #e74c3c; /* Rojo */
+}
+
+.navbar-brand img {
+    filter: brightness(1); /* Sin filtro de brillo */
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #ffffff; /* Texto blanco */
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: #ffffff; /* Texto blanco */
+}
+
+.card {
+    border-radius: 10px; /* Bordes más suaves */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1); /* Sombra más sutil */
+    transition: all 0.3s ease;
+}
+
+.card-body {
+    padding: 1.5rem; /* Menos padding */
+}
+
+h2.card-title {
+    font-size: 1.6rem; /* Tamaño de fuente reducido */
+    color: var(--text-color);
+}
+
+.card:hover {
+    transform: scale(1.02); /* Escalado ligero */
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2); /* Sombra más fuerte */
+}
+
+.form-control {
+    border: 2px solid var(--primary-color);
+    border-radius: 4px; /* Bordes más suaves */
+    padding: 8px; /* Menos padding */
+}
+
+.form-control:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 0.2rem rgba(46, 204, 113, 0.25); /* Color verde más claro */
+}
+
+.form-label {
+    font-weight: normal; /* Peso de fuente normal */
+    color: #34495e; /* Gris azulado oscuro */
+}
+
+.btn-link {
+    color: #2980b9; /* Azul más oscuro */
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+}
+
+.contact-form {
+    background-color: var(--background-color); /* Color de fondo para el formulario */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra sutil */
+}
+
+.contact-form .form-label {
+    font-weight: 600; /* Negrita para las etiquetas */
+    color: var(--text-color); /* Color del texto */
+}
+
+.contact-form .form-control {
+    border: 2px solid var(--primary-color); /* Borde del campo de formulario */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    transition: border-color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+.contact-form .form-control:focus {
+    border-color: var(--secondary-color); /* Color del borde al enfocar */
+    box-shadow: 0 0 0 0.2rem rgba(46, 204, 113, 0.25); /* Sombra al enfocar */
+}
+
+.contact-form .text-danger {
+    font-size: 0.875rem; /* Tamaño de fuente más pequeño para los errores */
+}
+
+.contact-form .btn-submit {
+    display: block;
+    width: 100%; /* Botón ocupa todo el ancho del contenedor */
+    font-size: 1.1rem; /* Tamaño de fuente del botón */
+}
