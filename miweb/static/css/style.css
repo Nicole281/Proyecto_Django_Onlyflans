@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: "Arial", sans-serif; /* Cambiado a Arial */
+    font-family: 'Montserrat', sans-serif;
     background: url("/static/flanes/nueva-foto.jpg") repeat fixed; /* Cambia la ruta de la imagen */
     color: var(--text-color);
     line-height: 1.6;
@@ -127,4 +127,11 @@ h2.card-title {
     display: block;
     width: 100%; /* Botón ocupa todo el ancho del contenedor */
     font-size: 1.1rem; /* Tamaño de fuente del botón */
+}
+
+.form-control {
+    border-radius: 0.375rem;
+    border: 1px solid #ced4da;
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
 }

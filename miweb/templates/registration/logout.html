@@ -1,5 +1,18 @@
 {% extends "base.html" %}
 
-{% block 'content' %}
-<p>Te haz desconectado <a href="{% url 'login' %}">Volver a ingresar</a></p>
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 text-center">
+            <div class="alert alert-warning" role="alert">
+                <h4 class="alert-heading">¡Hasta pronto!</h4>
+                <p>Te has desconectado exitosamente. Esperamos verte de nuevo pronto.</p>
+                <hr>
+                <p class="mb-0">
+                    <a href="{% url 'login' %}" class="btn btn-primary mt-3">Volver a ingresar</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
