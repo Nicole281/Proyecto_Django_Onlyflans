@@ -20,11 +20,9 @@
                 </li>
                 {% if user.is_authenticated %}
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="{% url 'welcome' %}">Bienvenido</a>
+                        <a class="nav-link text-light" href="{% url 'welcome' %}">Bienvenide</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="admin">Panel de control</a>
-                    </li>
+                   
                     <li class="nav-item">
                         <form method="POST" action="{% url 'logout' %}" style="display: inline;">
                             {% csrf_token %}
