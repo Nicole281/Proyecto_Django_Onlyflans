@@ -135,3 +135,11 @@ h2.card-title {
     padding: 0.75rem 1.25rem;
     font-size: 1rem;
 }
+
+.large-text {
+    font-size: 1.5em; /* Ajusta el tamaño según tus necesidades */
+}
+
+.nav-link.btn.btn-primary {
+    margin-left: 10px; /* Ajusta según sea necesario */
+}

@@ -22,7 +22,6 @@
                     <li class="nav-item">
                         <a class="nav-link text-light" href="{% url 'welcome' %}">Bienvenide</a>
                     </li>
-                   
                     <li class="nav-item">
                         <form method="POST" action="{% url 'logout' %}" style="display: inline;">
                             {% csrf_token %}
@@ -31,7 +30,7 @@
                     </li>
                 {% else %}
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="{% url 'login' %}">Iniciar sesión</a>
+                        <a class="nav-link text-light btn btn-primary" href="{% url 'login' %}">Iniciar sesión</a>
                     </li>
                 {% endif %}
             </ul>
